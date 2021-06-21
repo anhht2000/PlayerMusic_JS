@@ -1,0 +1,53 @@
+{
+    "song": [
+        {
+        "name": "Baby",
+        "singer": "Justin Beiber",
+        "path": "./audio/Baby - Justin Bieber_ Ludacris.mp3",
+        "image": "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+        },
+        {
+        "name": "Xin Chao Viet Nam",
+        "singer": "Ái Phương",
+        "path": "./audio/XinChaoVietNamAiPhuong.mp3",
+        "image":
+            "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+        },
+        {
+        "name": "Đừng Hẹn Kiếp Sau",
+        "singer": "Đình Dũng",
+        "path":
+            "./audio/DungHenKiepSau.mp3",
+        "image": "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+        },
+        {
+        "name": "Hãy Trao Cho Anh",
+        "singer":  "Sơn Tùng",
+        "path": "./audio/HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3",
+        "image":
+            "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+        },
+        {
+        "name": "Bình Yên Những Phút Giây",
+        "singer": "Sơn Tùng",
+        "path": "./audio/BinhYenNhungPhutGiay-SonTungMTP-4915711.mp3",
+        "image":
+            "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+        },
+        {
+        "name": "Không Phải Dạng Vừa Đâu",
+        "singer":  "Sơn Tùng",
+        "path":
+            "./audio/KhongPhaiDangVuaDau-SonTungMTP-3753840.mp3",
+        "image":
+            "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+        },
+        {
+        "name": "Như Ngày Hôm Qua",
+        "singer": "Tùng Núi MTP",
+        "path": "./audio/NhuNgayHomQuaUpgrade-SonTungMTP-4282962.mp3",
+        "image":
+            "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
+        }
+    ]
+}

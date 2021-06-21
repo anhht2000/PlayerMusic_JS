@@ -1,0 +1,32 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-hover: hsla(0, 0%, 100%, .7);
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, "WenQuanYi Zen Hei", "Hiragino Sans GB", sans-serif;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #353535;
+}
+
+body {
+    color: #353535;
+}
