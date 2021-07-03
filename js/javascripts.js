@@ -31,6 +31,7 @@ const playlist = $('.playlist')
 const timechange = $('.timeChange')
 const timeTotal = $('.timeTotal')
 const app ={
+    currentTotalTime:0,
     currentIndex: 0,
     isPlaying : false,
     isRandom: false,
@@ -155,9 +156,9 @@ const app ={
             rotateCD.play()
             player.classList.add('playing')
             _this.isPlaying = true
-            //xu ly set data cho timetotal
-            timeTotal.innerText = Math.round((audio.duration / 60)*100)/100
-            // console.log(audio.duration)
+            // timeTotal.innerText = 0
+            
+            
         }
         audio.onpause =()=>{
             rotateCD.pause()
@@ -167,9 +168,15 @@ const app ={
 
         }
         //lay thoi gian dang chay
-        
+        audio.onloadedmetadata = function () {
+            timeTotal.innerText = Math.round((audio.duration / 60)*100)/100
+            progress.value = 0;
+            timechange.innerText = 0
+            
+        }
         audio.ontimeupdate =()=>{
-            // console.log(audio.currentTime / 60)
+            // console.log(audio);
+            //xu ly totalTIme
             progress.value = ((audio.currentTime / audio.duration) * 100)
             timechange.innerText = Math.round((audio.currentTime / 60)*100)/100
         }
@@ -281,7 +288,8 @@ const app ={
         header.innerText = this.currentSong.name
         cdThump.style.backgroundImage = `url('${this.currentSong.image}')`
         audio.src = this.currentSong.path
-        
+        // console.log(audio);
+        // this.currentTotalTime = audio.duration
     },
     loadRandom:function(){
         var nextRandom;
@@ -298,7 +306,7 @@ const app ={
     start: function(){
         //Load config
         this.loadConfig()
-        //dinh nghia cac thuoc tinh cho Object
+        //dinh nghia cac thuoc tinh cho Object. get currentSong
         this.defaultProperties()
         // console.log([audio])
         //xu ly event
